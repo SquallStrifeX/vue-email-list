@@ -10,7 +10,9 @@
 </head>
 <body>
     <div id="app">
-        <div v-if="(randomMail.length == 10)" v-for="(item, index) in randomMail">{{item}}</div>
+        <div v-if="(randomMail.length === 10)">
+        <div v-for="(item, index) in randomMail">{{item}}</div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
